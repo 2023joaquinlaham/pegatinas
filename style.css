@@ -1,0 +1,425 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #14213d;
+    padding: 30px;
+}
+
+
+/* HEADER */
+
+header {
+    background: #1e3557;
+    color: white;
+
+    padding: 25px 35px;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.logo {
+    font-size: 45px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    color: #b9d8ff;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.profile {
+    margin-left: auto;
+    font-size: 35px;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+main {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+/* TARJETAS */
+
+.card {
+    background: white;
+
+    border: 1px solid #dce5f0;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+/* TÍTULOS */
+
+.section-title {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.section-title > span {
+    background: #2677d9;
+
+    color: white;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 27px;
+}
+
+.section-title p {
+    color: #61718a;
+
+    margin-top: 7px;
+}
+
+
+/* INPUTS */
+
+label {
+    display: block;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+input,
+select {
+    width: 100%;
+
+    padding: 16px;
+
+    border: 1px solid #cbd8e8;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    background: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #2677d9;
+}
+
+
+/* MONEDAS */
+
+.currency-container {
+    display: grid;
+
+    grid-template-columns: 1fr 40px 1fr;
+
+    align-items: end;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.swap {
+    font-size: 28px;
+
+    color: #2677d9;
+
+    text-align: center;
+
+    padding-bottom: 12px;
+}
+
+
+/* BOTÓN */
+
+button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 17px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2677d9;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1c62b5;
+
+    transform: translateY(-2px);
+}
+
+
+/* RESULTADO */
+
+.result {
+    background: #e9f9f2;
+
+    border: 1px solid #bdebd7;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-top: 25px;
+}
+
+.result span {
+    font-weight: bold;
+
+    font-size: 17px;
+}
+
+.result h3 {
+    font-size: 38px;
+
+    margin: 10px 0;
+
+    color: #17334f;
+}
+
+.result p {
+    color: #61718a;
+}
+
+
+/* NUEVA PEGATINA */
+
+.new-sticker {
+    background: #eef5ff;
+
+    border: 1px solid #bdd8ff;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.new-sticker h3 {
+    margin-bottom: 10px;
+}
+
+.new-sticker p {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+/* PEGATINA */
+
+.sticker {
+    width: 105px;
+    height: 125px;
+
+    border: 4px solid #2677d9;
+
+    border-radius: 18px;
+
+    background: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 32px;
+
+    transform: rotate(-4deg);
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sticker strong {
+    font-size: 20px;
+
+    color: #2677d9;
+}
+
+.sticker small {
+    font-size: 15px;
+
+    background: #2677d9;
+
+    color: white;
+
+    padding: 4px 8px;
+
+    border-radius: 6px;
+}
+
+
+/* COLECCIÓN */
+
+.collection-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 25px 0 15px;
+}
+
+.collection-header h3 {
+    font-size: 21px;
+}
+
+.collection-header span {
+    background: #edf2f8;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+}
+
+
+/* GRID DE PEGATINAS */
+
+.sticker-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+.sticker-card {
+    background: #f8fbff;
+
+    border: 1px solid #dce5f0;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.sticker-card .sticker {
+    margin: 0 auto 15px;
+}
+
+.sticker-card p {
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.quantity {
+    display: inline-block;
+
+    background: #e4efff;
+
+    color: #2677d9;
+
+    padding: 5px 10px;
+
+    border-radius: 15px;
+
+    font-weight: bold;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .currency-container {
+        grid-template-columns: 1fr;
+    }
+
+    .swap {
+        display: none;
+    }
+
+    .sticker-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
