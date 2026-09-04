@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StickerCurrency</title>
+
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            🏷️
+        </div>
+
+        <div>
+            <h1>StickerCurrency</h1>
+            <p>Convierte. Colecciona. Repite.</p>
+        </div>
+
+        <div class="profile">
+            👤
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- SECCIÓN 1 -->
+        <section class="card converter">
+
+            <div class="section-title">
+                <span>1</span>
+
+                <div>
+                    <h2>Conversor de Divisas</h2>
+                    <p>Ingresa el monto y selecciona las monedas.</p>
+                </div>
+            </div>
+
+
+            <label for="amount">Monto a convertir</label>
+
+            <input
+                type="number"
+                id="amount"
+                placeholder="Ej: 10000"
+                value="10000"
+            >
+
+
+            <div class="currency-container">
+
+                <div>
+                    <label for="fromCurrency">De</label>
+
+                    <select id="fromCurrency">
+                        <option value="ARS">🇦🇷 ARS - Peso Argentino</option>
+                        <option value="USD">🇺🇸 USD - Dólar Estadounidense</option>
+                        <option value="EUR">🇪🇺 EUR - Euro</option>
+                        <option value="GBP">🇬🇧 GBP - Libra Esterlina</option>
+                        <option value="BRL">🇧🇷 BRL - Real Brasileño</option>
+                    </select>
+                </div>
+
+                <div class="swap">
+                    ⇄
+                </div>
+
+                <div>
+                    <label for="toCurrency">A</label>
+
+                    <select id="toCurrency">
+                        <option value="USD">🇺🇸 USD - Dólar Estadounidense</option>
+                        <option value="ARS">🇦🇷 ARS - Peso Argentino</option>
+                        <option value="EUR">🇪🇺 EUR - Euro</option>
+                        <option value="GBP">🇬🇧 GBP - Libra Esterlina</option>
+                        <option value="BRL">🇧🇷 BRL - Real Brasileño</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <button id="convertButton">
+                🔄 Convertir
+            </button>
+
+
+            <div class="result">
+                <span>Resultado</span>
+
+                <h3 id="resultValue">
+                    $ 8,50 USD
+                </h3>
+
+                <p id="operation">
+                    (10.000 ARS = 8,50 USD)
+                </p>
+            </div>
+
+        </section>
+
+
+
+        <!-- SECCIÓN 2 -->
+        <section class="card stickers">
+
+            <div class="section-title">
+                <span>2</span>
+
+                <div>
+                    <h2>Sistema de Pegatinas</h2>
+                    <p>Cada conversión genera una pegatina.</p>
+                </div>
+            </div>
+
+
+            <!-- Nueva pegatina -->
+            <div class="new-sticker">
+
+                <div id="stickerPreview" class="sticker">
+                    🇺🇸
+                    <strong>USD</strong>
+                    <small>$8,50</small>
+                </div>
+
+                <div>
+                    <h3>🎉 ¡Nueva pegatina obtenida!</h3>
+
+                    <p id="newStickerText">
+                        USD - $8,50
+                    </p>
+
+                    <small>
+                        Se agregó a tu colección.
+                    </small>
+                </div>
+
+            </div>
+
+
+            <div class="collection-header">
+                <h3>Tu colección de pegatinas</h3>
+
+                <span>
+                    Total: <b id="stickerCount">1</b>
+                </span>
+            </div>
+
+
+            <div id="stickerCollection" class="sticker-grid">
+
+                <!-- Las pegatinas se generan con JavaScript -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="SCRIPT.JS"></script>
+
+</body>
+</html>
